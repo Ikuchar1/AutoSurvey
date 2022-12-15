@@ -1,0 +1,74 @@
+
+
+<title>Dairy Queen Survey</title>
+<style>
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #777;
+}
+
+.button {
+
+margin-left: 20px;
+
+}
+
+body {
+  /* existing styles */
+  background-color: #eee;
+  color: #333;
+}
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+
+    <h1>Auto Survey For Dairy Queen</h1>
+
+    <!--This deals with the submit button interactivity-->
+    <script src = "interaction.js"></script>
+
+    <form>
+     <label class = "label">First 3 Nums:</label>
+     <input type="number" id="number1" max="999" class = "input"/>
+     <label class = "label">Second 3 Nums:</label>
+     <input type="number" id="number2" max="999" class = "input"/>
+     <label class = "label">Last 4 Nums:</label>
+     <input type="number" id="number3" max="9999" class = "input"/>
+
+  
+
+      <button class = "button" type="submit" value="Submit" id = "submitButton">Submit</button>
+       <br>
+     <label>Sum:</label>
+      <output id="sum"></output>
+        <br>
+      <label>Current Date:</label>
+     <label id="current-date-label"></label>
+  
+
+    </form>
+
+
+
+</body>
+  
